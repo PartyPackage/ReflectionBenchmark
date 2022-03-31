@@ -1,10 +1,10 @@
-#Java 18 Reflection Benchmarks
+# Java 18 Reflection Benchmarks
 I was curious as to how much faster the reimplementation of core reflection in Java 18 
 ([JEP 416](https://openjdk.java.net/jeps/416)) was in relation to Java 17, so I made some benchmarks.
 This was also my first time making benchmarks, so it was a fun project to learn how to use 
 [JMH](https://github.com/openjdk/jmh).
 
-##Java 17
+## Java 17
 ```
 Benchmark                                      Mode  Cnt   Score   Error  Units
 ReflectionBenchmark._0_nativeNewInstance       avgt   25  13.644 ± 0.024  ns/op
@@ -18,7 +18,7 @@ ReflectionBenchmark._5_nativeGetField          avgt   25   0.723 ± 0.049  ns/op
 ReflectionBenchmark._6_reflectionGetField      avgt   25   4.254 ± 0.027  ns/op
 ```
 
-##Java 18
+## Java 18
 ```
 Benchmark                                      Mode  Cnt   Score   Error  Units
 ReflectionBenchmark._0_nativeNewInstance       avgt   25  13.734 ± 0.080  ns/op
